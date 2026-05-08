@@ -2,7 +2,9 @@
 
 A simple Flutter block puzzle game with a built-in solver.
 
-Users can play the game normally, or enable **Dev Mode** to manually edit the board and available blocks, then use the solver to check whether a valid solution exists.
+Users can play the game normally, or enable **Dev Mode** to edit the board and available blocks, then use the solver to check whether a valid solution exists.
+
+![Normal gameplay](screenshots/gameplay.jpeg)
 
 ## Features
 
@@ -13,26 +15,38 @@ Users can play the game normally, or enable **Dev Mode** to manually edit the bo
 - Built with Flutter
 - Uses Provider for state management
 
-## How the App Works
+## How to Use
 
-The app can be used in two ways:
+### 1. Play Normally
 
-### Normal Mode
+Open the app and play the block puzzle game by placing the available blocks on the board.
 
-In normal mode, the user plays the block puzzle game normally by placing the available blocks on the board.
+### 2. Enable Dev Mode (OPTIONAL)
 
-### Dev Mode / Solver Mode
+Tap the **Dev Mode** button at the bottom-left of the screen.
 
-Dev Mode keeps the same board view, but allows the user to manually edit the board and available blocks.
+![Dev Mode button](screenshots/dev-button.jpeg)
 
-This is useful when the user wants to recreate another puzzle state and check whether a solution exists.
+### 3. Edit the Board or Available Blocks (OPTIONAL)
 
-To use it:
+Dev Mode keeps the same board view, but allows you to manually edit the board and the available blocks.
 
-1. Tap the **Dev Mode** button at the bottom-left of the screen.
-2. Edit the board or the available blocks if you want to match another puzzle state.
-3. Tap **Solve**.
-4. The app checks whether a valid solution exists and shows the result.
+You can use this to recreate another puzzle state.
+
+You can edit the board by:
+
+- tapping a cell to toggle it
+- dragging across multiple cells to toggle several cells in one touch
+
+![Dev Mode editing](screenshots/dev-mode-editing.jpeg)
+
+### 4. Run the Solver
+
+Tap **Solve** to check whether a valid solution exists.
+
+If a solution is found, the app shows the solution step by step.
+
+![Solver result](screenshots/solver-result.jpeg)
 
 ## Dependencies
 
@@ -63,7 +77,7 @@ flutter doctor
 Clone the repository:
 
 ```bash
-git clone https://github.com/nkiro33/block_puzzle_solver.git
+git clone https://github.com/YOUR_USERNAME/block_puzzle_solver.git
 cd block_puzzle_solver
 ```
 
@@ -86,7 +100,6 @@ Run on a connected phone in release mode:
 ```bash
 flutter run --release
 ```
-
 
 To check connected devices:
 
